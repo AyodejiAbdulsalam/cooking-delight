@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Delight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cooking Delight</h1>
+        <nav>
+            <ul>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <section id="recipes">
+        <h2>Featured Recipes</h2>
+        <div class="recipe">
+            <h3>Spaghetti Bolognese</h3>
+            <p>A classic Italian pasta dish with a rich meat sauce.</p>
+            <button onclick="showRecipe('Spaghetti Bolognese')">View Recipe</button>
+            <p class="tip">Tip: Use freshly grated Parmesan cheese for an authentic flavor!</p>
+        </div>
+        <div class="recipe">
+            <h3>Chicken Curry</h3>
+            <p>A flavorful Indian dish with tender chicken and spices.</p>
+            <button onclick="showRecipe('Chicken Curry')">View Recipe</button>
+            <p class="tip">Tip: Marinate chicken overnight for deeper flavors.</p>
+        </div>
+        <div class="recipe">
+            <h3>Vegetable Stir-Fry</h3>
+            <p>A quick and healthy mix of vegetables cooked in soy sauce.</p>
+            <button onclick="showRecipe('Vegetable Stir-Fry')">View Recipe</button>
+            <p class="tip">Tip: Use a hot wok for that perfect smoky aroma!</p>
+        </div>
+        <div class="recipe">
+            <h3>Chocolate Cake</h3>
+            <p>A rich and moist dessert for chocolate lovers.</p>
+            <button onclick="showRecipe('Chocolate Cake')">View Recipe</button>
+            <p class="tip">Tip: Add a pinch of salt to enhance the chocolate flavor.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://wa.me/2349039688292" method="post">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cooking Delight. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
